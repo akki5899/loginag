@@ -1,0 +1,26 @@
+
+
+  <div class="container">
+    <h1>FORGET PASSWORD</h1>
+  <table  class="table ">
+
+  <tr>
+    <td>OLD PASSWORD</td>
+    <td><input [(ngModel)]="oldpassword" type="password" placeholder="Password"></td>
+  </tr>
+
+  <tr>
+    <td>NEW PASSWORD</td>
+    <td><input [(ngModel)]="newpassword" type="password" placeholder="Password"></td>
+  </tr>
+
+
+  <tr>
+    <td> CONFERM PASSWORD</td>
+    <td><input [(ngModel)]="confirmpassword" type="password" placeholder="Password"></td>
+  </tr>
+
+</table>
+<button class="btn btn-primary "(click)="change()" >Save</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="btn btn-default "(click)="onBack()" >SIGN IN</button>
+  </div>

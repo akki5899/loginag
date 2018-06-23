@@ -1,0 +1,41 @@
+
+  <div class="container">
+      <h1>SIGN UP</h1>
+    <table  class="table ">
+    <tr>
+      <td>EMAIL ID</td>
+      <td><input [(ngModel)]="email_id"  type="email" placeholder="EMAIL Id"></td>
+    </tr>
+    <tr>
+        <td>PASSWORD</td>
+        <td><input [(ngModel)]="password" type="password" placeholder="Password"></td>
+    </tr>
+
+    <tr>
+        <td>USER NAME</td>
+        <td><input [(ngModel)]="user_name"  type="text" placeholder="USER NAME"></td>
+    </tr>
+    <tr>
+        <td>MOBILE NO</td>
+        <td><input [(ngModel)]="mobile_no"  type="number" placeholder="MOBILE NO"></td>
+    </tr>
+    <tr>
+        <td>CITY</td>
+        <td><input [(ngModel)]="city"  type="text" placeholder="CITY"></td>
+    </tr>
+    <tr>
+        <td>GENDER</td>
+        <td><input [(ngModel)]="gender"  type="radio" name="rbtgen" value="male">MALE
+          <input  [(ngModel)]="gender" type="radio" name="rbtgen" value="female">FEMALE
+        </td>
+    </tr>
+    <tr>
+      <td>ADDRESS</td>
+      <td><textarea [(ngModel)]="address"></textarea></td>
+    </tr>
+
+
+  </table>
+  <button class="btn btn-primary " (click)="onsignup()" >SIGN UP</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button class="btn btn-default " (click)="onBack()" >BACK</button>
+    </div>

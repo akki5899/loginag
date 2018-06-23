@@ -1,0 +1,18 @@
+
+  <div class="container">
+    <h1>LOG IN</h1>
+  <table  class="table ">
+    <tr>
+      <td>EMAIL ID</td>
+      <td><input [(ngModel)]="email_id"  type="email" placeholder="EMAIL Id"></td>
+    </tr>
+  <tr>
+    <td>PASSWORD</td>
+    <td><input [(ngModel)]="password" type="password" placeholder="Password"></td>
+  </tr>
+</table>
+<button class="btn btn-primary "(click)="login()" >LOG IN</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="btn btn-default " (click)="signup()" >SIGN UP</button>
+<a (click)="onForget()">Forget Password??</a>
+
+  </div>

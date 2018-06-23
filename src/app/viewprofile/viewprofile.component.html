@@ -1,0 +1,42 @@
+
+  <div class="container">
+    <h1>VIEW DETAILS</h1>
+  <table  class="table ">
+
+    <tr>
+      <td>EMAIL ID</td>
+      <td><input [(ngModel)]="email_id" disabled type="email" placeholder="EMAIL Id"></td>
+    </tr>
+    <tr>
+        <td>PASSWORD</td>
+        <td><input [(ngModel)]="password" disabled type="password" placeholder="Password"></td>
+    </tr>
+
+    <tr>
+        <td>USER NAME</td>
+        <td><input [(ngModel)]="user_name" disabled type="text" placeholder="USER NAME"></td>
+    </tr>
+    <tr>
+        <td>MOBILE NO</td>
+        <td><input [(ngModel)]="mobile_no" disabled type="number" placeholder="MOBILE NO"></td>
+    </tr>
+    <tr>
+        <td>CITY</td>
+        <td><input [(ngModel)]="city" disabled type="text" placeholder="CITY"></td>
+    </tr>
+    <tr>
+        <td>GENDER</td>
+        <td><input [(ngModel)]="gender" disabled type="radio" name="rbtgen" value="male">MALE
+          <input  [(ngModel)]="gender" disabled type="radio" name="rbtgen" value="female">FEMALE
+        </td>
+    </tr>
+    <tr>
+      <td>ADDRESS</td>
+      <td><textarea disabled [(ngModel)]="address"></textarea></td>
+    </tr>
+
+
+</table>
+<button class="btn btn-primary " (click)="UPDATE()" >EDIT</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="btn btn-default " (click)="onBack()" >BACK</button>
+  </div>
